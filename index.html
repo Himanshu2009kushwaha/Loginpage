@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(0, 0, 0);
+            color: rgb(21, 255, 0);
+            text-align: center;
+            margin-top: 100px;
+        }
+        .container {
+            border: 2px solid rgb(0, 128, 38);
+            padding: 20px;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            border: 1px solid rgb(255, 255, 255);
+            background: rgb(35, 36, 35);
+            color: rgb(0, 255, 0);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: rgb(21, 109, 21);
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Your details </h2>
+        <input type="text" placeholder="User id" id="user id"><br>
+        <input type="password" placeholder="Password" id="password"><br>
+        <button onclick="hackLogin()">Login</button>
+    </div>
+
+    <script>
+        function hackLogin() {
+            window.location.href = "hacked.html";
+        }
+    </script>
+</body>
+</html>
